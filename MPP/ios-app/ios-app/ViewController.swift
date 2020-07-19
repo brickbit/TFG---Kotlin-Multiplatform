@@ -7,14 +7,13 @@
 //
 
 import UIKit
+import MultiPlatformLibrary
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
+  override func viewDidLoad() {
+    // ...
+    HelloWorld().print()
+    IosHelloWorld().print()
+  }
 }
 
