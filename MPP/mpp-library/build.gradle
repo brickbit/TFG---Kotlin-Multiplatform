@@ -7,4 +7,12 @@ android {
         minSdkVersion 21
         targetSdkVersion 28
     }
+
+    kotlin {
+        targets {
+            android()
+            iosArm64()
+            iosX64()
+        }
+    }
 }
