@@ -7,12 +7,32 @@ android {
         minSdkVersion 21
         targetSdkVersion 28
     }
-
-    kotlin {
-        targets {
-            android()
-            iosArm64()
-            iosX64()
+    sourceSets {
+        main {
+            setRoot('src/androidMain')
         }
+        release {
+            setRoot('src/androidMainRelease')
+        }
+        debug {
+            setRoot('src/androidMainDebug')
+        }
+        test {
+            setRoot('src/androidUnitTest')
+        }
+        testRelease {
+            setRoot('src/androidUnitTestRelease')
+        }
+        testDebug {
+            setRoot('src/androidUnitTestDebug')
+        }
+    }
+}
+
+kotlin {
+    targets {
+        android()
+        iosArm64()
+        iosX64()
     }
 }

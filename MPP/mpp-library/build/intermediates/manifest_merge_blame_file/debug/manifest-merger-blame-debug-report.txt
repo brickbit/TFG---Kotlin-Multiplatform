@@ -4,8 +4,8 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="21"
-6-->/Users/rupestre/Desktop/TFG---Kotlin-Multiplatform/MPP/mpp-library/src/main/AndroidManifest.xml
+6-->/Users/rupestre/Desktop/TFG---Kotlin-Multiplatform/MPP/mpp-library/src/androidMain/AndroidManifest.xml
 7        android:targetSdkVersion="28" />
-7-->/Users/rupestre/Desktop/TFG---Kotlin-Multiplatform/MPP/mpp-library/src/main/AndroidManifest.xml
+7-->/Users/rupestre/Desktop/TFG---Kotlin-Multiplatform/MPP/mpp-library/src/androidMain/AndroidManifest.xml
 8
 9</manifest>
