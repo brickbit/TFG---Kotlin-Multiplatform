@@ -1,2 +1,4 @@
+include ':mpp-library'
 include ':android-app'
+
 rootProject.name = "MPP"
