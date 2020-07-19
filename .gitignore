@@ -2,3 +2,5 @@
 .idea/
 
 .DS_Store
+
+MPP/mpp-library/build/*
