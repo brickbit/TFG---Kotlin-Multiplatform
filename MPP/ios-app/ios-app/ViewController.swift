@@ -10,8 +10,11 @@ import UIKit
 import MultiPlatformLibrary
 
 class ViewController: UIViewController {
-  override func viewDidLoad() {
+    @IBOutlet weak var testText: UILabel!
+    override func viewDidLoad() {
     // ...
+    let monument = MonumentMainItemDomain(id: 1, title: "La sagrada familia", geocoordinates: "1-1")
+        testText.text = monument.title
     HelloWorld().print()
     IosHelloWorld().print()
   }

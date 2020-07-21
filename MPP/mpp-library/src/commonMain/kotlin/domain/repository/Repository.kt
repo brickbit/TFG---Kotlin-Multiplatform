@@ -1,4 +1,4 @@
 package domain.repository
 
-interface Reposityory {
+interface Repository {
 }
