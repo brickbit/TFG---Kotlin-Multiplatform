@@ -1,7 +1,8 @@
-package com.architecture.mpp
+package com.architecture.mpp.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.architecture.mpp.R
 import domain.model.MonumentMainItemDomain
 import kotlinx.android.synthetic.main.activity_main.*
 
