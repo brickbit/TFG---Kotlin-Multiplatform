@@ -32,7 +32,7 @@ kotlin {
 
     sourceSets["commonMain"].dependencies {
         implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.3.72")
-        implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7")
+        implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.3.5-native-mt")
         implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:0.20.0")
         implementation("io.ktor:ktor-client-core:1.3.2")
         implementation("io.ktor:ktor-client-json:1.3.2")
@@ -43,7 +43,7 @@ kotlin {
 
     sourceSets["androidMain"].dependencies {
         implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.3.72")
-        implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7")
+        implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.3.5-native-mt")
         implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:0.20.0")
         implementation("io.ktor:ktor-client-core:1.3.2")
         implementation("io.ktor:ktor-client-json:1.3.2")
@@ -54,7 +54,7 @@ kotlin {
 
     sourceSets["iosX64Main"].dependencies {
         implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.3.72")
-        implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7")
+        implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.3.5-native-mt")
         implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:0.20.0")
         implementation("io.ktor:ktor-client-core:1.3.2")
         implementation("io.ktor:ktor-client-json:1.3.2")
@@ -64,8 +64,9 @@ kotlin {
     }
 
     sourceSets["iosArm64Main"].dependencies {
+
         implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.3.72")
-        implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7")
+        implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.3.5-native-mt")
         implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:0.20.0")
         implementation("io.ktor:ktor-client-core:1.3.2")
         implementation("io.ktor:ktor-client-json:1.3.2")
