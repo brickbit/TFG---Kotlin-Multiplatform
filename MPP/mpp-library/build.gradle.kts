@@ -20,6 +20,11 @@ android {
         getByName("testRelease").setRoot("src/androidUnitTestRelease")
         getByName("testDebug").setRoot("src/androidUnitTestDebug")
     }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion = "30.0.1"
 
 }
 
