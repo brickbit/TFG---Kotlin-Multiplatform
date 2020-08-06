@@ -8,7 +8,9 @@ plugins {
 android {
     compileSdkVersion (30)
     buildToolsVersion ("30.0.1")
-
+    packagingOptions {
+        exclude ("META-INF/*.kotlin_module")
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8

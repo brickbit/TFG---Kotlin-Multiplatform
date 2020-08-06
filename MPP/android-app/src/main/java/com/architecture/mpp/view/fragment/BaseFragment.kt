@@ -47,15 +47,7 @@ abstract class BaseFragment <out V : BasePresenter.View> : Fragment(), KodeinAwa
         toast(error)
     }
 
-    override fun showError(errorId: Int) {
-        toast(errorId)
-    }
-
     override fun showMessage(message: String) {
         toast(message, Toast.LENGTH_SHORT)
-    }
-
-    override fun showMessage(messageId: Int) {
-        toast(messageId, Toast.LENGTH_SHORT)
     }
 }

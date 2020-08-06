@@ -1,5 +1,8 @@
 package domain.model
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class MonumentDetailDomain(val id: Long,
                                 val title: String,
                                 val address: String,

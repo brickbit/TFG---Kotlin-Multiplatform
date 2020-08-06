@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinNativeLink
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.multiplatform")
+    kotlin("plugin.serialization") version "1.3.72"
 }
 
 
@@ -40,44 +41,28 @@ kotlin {
         implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.3.5-native-mt")
         implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:0.20.0")
         implementation("io.ktor:ktor-client-core:1.3.2")
-        implementation("io.ktor:ktor-client-json:1.3.2")
-        implementation("io.ktor:ktor-client-serialization:1.3.2")
-        implementation("io.ktor:ktor-client-auth:1.3.2")
-        implementation("io.ktor:ktor-client-logging:1.3.2")
     }
 
     sourceSets["androidMain"].dependencies {
         implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.3.72")
         implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.3.5-native-mt")
-        implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:0.20.0")
-        implementation("io.ktor:ktor-client-core:1.3.2")
-        implementation("io.ktor:ktor-client-json:1.3.2")
-        implementation("io.ktor:ktor-client-serialization:1.3.2")
-        implementation("io.ktor:ktor-client-auth:1.3.2")
-        implementation("io.ktor:ktor-client-logging:1.3.2")
+        implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.20.0")
+        implementation("io.ktor:ktor-client-android:1.3.2")
     }
 
     sourceSets["iosX64Main"].dependencies {
         implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.3.72")
         implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.3.5-native-mt")
-        implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:0.20.0")
+        implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-native:0.20.0")
         implementation("io.ktor:ktor-client-core:1.3.2")
-        implementation("io.ktor:ktor-client-json:1.3.2")
-        implementation("io.ktor:ktor-client-serialization:1.3.2")
-        implementation("io.ktor:ktor-client-auth:1.3.2")
-        implementation("io.ktor:ktor-client-logging:1.3.2")
     }
 
     sourceSets["iosArm64Main"].dependencies {
 
         implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.3.72")
         implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.3.5-native-mt")
-        implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:0.20.0")
-        implementation("io.ktor:ktor-client-core:1.3.2")
-        implementation("io.ktor:ktor-client-json:1.3.2")
-        implementation("io.ktor:ktor-client-serialization:1.3.2")
-        implementation("io.ktor:ktor-client-auth:1.3.2")
-        implementation("io.ktor:ktor-client-logging:1.3.2")
+        implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-native:0.20.0")
+        implementation("io.ktor:ktor-client-ios:1.3.2")
     }
 }
 

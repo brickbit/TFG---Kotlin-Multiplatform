@@ -1,6 +1,6 @@
 import domain.error.Either
 import domain.error.ErrorHandler
-import domain.error.Result.CustomError
+import domain.error.Result
 import domain.executor.Executor
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
@@ -20,9 +20,9 @@ abstract class BasePresenter<out V : BasePresenter.View>(
 
     fun detach() = job.cancel()
 
-    protected suspend fun <T> execute(f: suspend () -> Either<CustomError, T>): Either<CustomError, T> = withContext(executor.background) { f() }
+    protected suspend fun <T> execute(f: suspend () -> Either<Result.Error, T>): Either<Result.Error, T> = withContext(executor.background) { f() }
 
-    protected fun onError(callback: (String) -> Unit): (CustomError) -> Unit = {
+    protected fun onError(callback: (String) -> Unit): (Result.Error) -> Unit = {
         view.hideProgress()
 
         val message = errorHandler.convert(it)
@@ -37,10 +37,6 @@ abstract class BasePresenter<out V : BasePresenter.View>(
 
         fun showError(error: String)
 
-        fun showError(errorId: Int)
-
         fun showMessage(message: String)
-
-        fun showMessage(messageId: Int)
     }
 }
