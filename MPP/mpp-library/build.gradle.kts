@@ -51,18 +51,17 @@ kotlin {
     }
 
     sourceSets["iosX64Main"].dependencies {
+        implementation("io.ktor:ktor-client-ios:1.3.2")
         implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.3.72")
         implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.3.5-native-mt")
         implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-native:0.20.0")
-        implementation("io.ktor:ktor-client-core:1.3.2")
     }
 
     sourceSets["iosArm64Main"].dependencies {
-
+        implementation("io.ktor:ktor-client-ios:1.3.2")
         implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.3.72")
         implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.3.5-native-mt")
         implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-native:0.20.0")
-        implementation("io.ktor:ktor-client-ios:1.3.2")
     }
 }
 
