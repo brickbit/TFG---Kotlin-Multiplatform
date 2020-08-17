@@ -9,13 +9,14 @@ import com.architecture.mpp.navigator.navigateToDetailActivity
 import com.architecture.mpp.view.adapter.MonumentAdapter
 import domain.model.MonumentMainItemDomain
 import domain.presenter.MonumentPresenter
+import domain.presenter.MonumentView
 import kotlinx.android.synthetic.main.activity_main.*
 import org.kodein.di.Kodein
 import org.kodein.di.generic.bind
 import org.kodein.di.generic.instance
 import org.kodein.di.generic.provider
 
-class MonumentActivity : BaseActivity<MonumentPresenter.View>(), MonumentPresenter.View {
+class MonumentActivity : BaseActivity<MonumentView>(), MonumentView {
 
     override val progress: View by lazy { progressViewMonument }
 

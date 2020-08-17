@@ -1,6 +1,7 @@
 package domain.presenter
 
 import BasePresenter
+import View
 import data.repository.RefreshStrategy
 import data.repository.Repository
 import domain.error.ErrorHandler
@@ -13,8 +14,8 @@ class MonumentPresenter(
     private val repository: Repository,
     errorHandler: ErrorHandler,
     executor: Executor,
-    view: View
-): BasePresenter<MonumentPresenter.View>(errorHandler,executor = executor, view = view){
+    view: MonumentView
+): BasePresenter<MonumentView>(errorHandler,executor = executor, view = view){
 
     override fun attach() {
         getMonumentItems()
@@ -50,10 +51,8 @@ class MonumentPresenter(
     fun onMonumentItemClicked(monumentMainItemDomain: MonumentMainItemDomain) {
         view.navigateToMonumentItem(monumentMainItemDomain.id.toString())
     }
-
-
-    interface View : BasePresenter.View {
-        fun navigateToMonumentItem(categoryId: String)
-        fun showMonumentList(monumentListItemView: MonumentMainItemDomain)
-    }
+}
+interface MonumentView : View {
+    fun navigateToMonumentItem(categoryId: String)
+    fun showMonumentList(monumentListItemView: MonumentMainItemDomain)
 }

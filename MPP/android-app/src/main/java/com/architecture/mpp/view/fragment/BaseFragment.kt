@@ -9,8 +9,9 @@ import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.subKodein
 import org.kodein.di.android.x.kodein
+import View as PresenterView
 
-abstract class BaseFragment <out V : BasePresenter.View> : Fragment(), KodeinAware, BasePresenter.View {
+abstract class BaseFragment <out V : PresenterView> : Fragment(), KodeinAware, PresenterView {
     abstract val presenter: BasePresenter<V>
 
     abstract val layoutResourceId: Int

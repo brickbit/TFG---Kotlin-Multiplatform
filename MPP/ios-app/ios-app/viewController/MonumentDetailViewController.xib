@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MonumentDetailViewController" customModule="ios_app" customModuleProvider="target">
+            <connections>
+                <outlet property="addressMonument" destination="4E3-Gi-hCs" id="Rgi-59-ff7"/>
+                <outlet property="coordinatesMonument" destination="qss-jx-9b9" id="zuO-on-36N"/>
+                <outlet property="descriptionMonument" destination="Myw-L1-4Wr" id="t5f-Qy-UaG"/>
+                <outlet property="phoneMonument" destination="U0D-YK-AB3" id="1jx-gD-p52"/>
+                <outlet property="titleMonument" destination="LgG-9x-FNx" id="xBr-3O-mq5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgG-9x-FNx">
+                    <rect key="frame" x="180" y="54" width="54" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Myw-L1-4Wr">
+                    <rect key="frame" x="16" y="100.5" width="382" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dirección" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4E3-Gi-hCs">
+                    <rect key="frame" x="174.5" y="153.5" width="65" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coordenadas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qss-jx-9b9">
+                    <rect key="frame" x="161" y="181.5" width="92" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teléfono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0D-YK-AB3">
+                    <rect key="frame" x="177.5" y="209.5" width="59" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRw-jY-azw">
+                    <rect key="frame" x="185.5" y="816" width="43" height="30"/>
+                    <state key="normal" title="Volver"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="5D4-R6-w2D"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="LgG-9x-FNx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6jE-hW-LAf"/>
+                <constraint firstItem="U0D-YK-AB3" firstAttribute="top" secondItem="qss-jx-9b9" secondAttribute="bottom" constant="10" id="Agt-EI-h3x"/>
+                <constraint firstItem="U0D-YK-AB3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="D9Y-q5-Ctn"/>
+                <constraint firstItem="SRw-jY-azw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EBS-Q7-3bj"/>
+                <constraint firstItem="qss-jx-9b9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EdI-uc-hK2"/>
+                <constraint firstItem="Myw-L1-4Wr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Fya-U8-rpl"/>
+                <constraint firstItem="Myw-L1-4Wr" firstAttribute="top" secondItem="LgG-9x-FNx" secondAttribute="bottom" constant="20" id="IwJ-ck-Hfd"/>
+                <constraint firstItem="qss-jx-9b9" firstAttribute="top" secondItem="4E3-Gi-hCs" secondAttribute="bottom" constant="10" id="Jgg-mX-G7a"/>
+                <constraint firstItem="4E3-Gi-hCs" firstAttribute="top" secondItem="Myw-L1-4Wr" secondAttribute="bottom" constant="35" id="OA9-TX-qf3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Myw-L1-4Wr" secondAttribute="trailing" constant="16" id="cyn-Y7-vVd"/>
+                <constraint firstItem="LgG-9x-FNx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="lcw-80-lpA"/>
+                <constraint firstItem="Myw-L1-4Wr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="noy-XA-uAe"/>
+                <constraint firstItem="4E3-Gi-hCs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qgZ-LS-4Nt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="SRw-jY-azw" secondAttribute="bottom" constant="16" id="rmd-as-NFB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="83"/>
+        </view>
+    </objects>
+</document>

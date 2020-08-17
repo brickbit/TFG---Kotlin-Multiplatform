@@ -10,6 +10,13 @@
 		ACA7A6956C412DB9CA0158A3 /* Pods_ios_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772BB01469711C7F188317AD /* Pods_ios_app.framework */; };
 		CE37F00624CA170400AEFA3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37F00424CA170400AEFA3D /* ViewController.swift */; };
 		CE37F00724CA170400AEFA3D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE37F00524CA170400AEFA3D /* ViewController.xib */; };
+		CEA21F5224E7EE2700FD25ED /* AppDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA21F5124E7EE2600FD25ED /* AppDI.swift */; };
+		CEA21F5424E7F5D800FD25ED /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA21F5324E7F5D800FD25ED /* BaseViewController.swift */; };
+		CEA21F5A24E9D13600FD25ED /* MonumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA21F5824E9D13600FD25ED /* MonumentTableViewCell.swift */; };
+		CEA21F5B24E9D13600FD25ED /* MonumentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA21F5924E9D13600FD25ED /* MonumentTableViewCell.xib */; };
+		CEA21F5D24EB01F200FD25ED /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA21F5C24EB01F200FD25ED /* Navigator.swift */; };
+		CEA21F6024EB028D00FD25ED /* MonumentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA21F5E24EB028D00FD25ED /* MonumentDetailViewController.swift */; };
+		CEA21F6124EB028D00FD25ED /* MonumentDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA21F5F24EB028D00FD25ED /* MonumentDetailViewController.xib */; };
 		CEE4884124C4CF0E009C60D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4884024C4CF0E009C60D7 /* AppDelegate.swift */; };
 		CEE4884324C4CF0E009C60D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4884224C4CF0E009C60D7 /* SceneDelegate.swift */; };
 		CEE4884A24C4CF0F009C60D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE4884924C4CF0F009C60D7 /* Assets.xcassets */; };
@@ -57,6 +64,13 @@
 		772BB01469711C7F188317AD /* Pods_ios_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE37F00424CA170400AEFA3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE37F00524CA170400AEFA3D /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		CEA21F5124E7EE2600FD25ED /* AppDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDI.swift; sourceTree = "<group>"; };
+		CEA21F5324E7F5D800FD25ED /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CEA21F5824E9D13600FD25ED /* MonumentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentTableViewCell.swift; sourceTree = "<group>"; };
+		CEA21F5924E9D13600FD25ED /* MonumentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonumentTableViewCell.xib; sourceTree = "<group>"; };
+		CEA21F5C24EB01F200FD25ED /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		CEA21F5E24EB028D00FD25ED /* MonumentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentDetailViewController.swift; sourceTree = "<group>"; };
+		CEA21F5F24EB028D00FD25ED /* MonumentDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonumentDetailViewController.xib; sourceTree = "<group>"; };
 		CEE4883D24C4CF0E009C60D7 /* ios-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE4884024C4CF0E009C60D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEE4884224C4CF0E009C60D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +121,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CEA21F5524E84D5C00FD25ED /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEA21F5324E7F5D800FD25ED /* BaseViewController.swift */,
+				CE37F00424CA170400AEFA3D /* ViewController.swift */,
+				CE37F00524CA170400AEFA3D /* ViewController.xib */,
+				CEA21F5824E9D13600FD25ED /* MonumentTableViewCell.swift */,
+				CEA21F5E24EB028D00FD25ED /* MonumentDetailViewController.swift */,
+				CEA21F5F24EB028D00FD25ED /* MonumentDetailViewController.xib */,
+				CEA21F5924E9D13600FD25ED /* MonumentTableViewCell.xib */,
+				CEE4884B24C4CF0F009C60D7 /* LaunchScreen.storyboard */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		CEA21F5624E84DAF00FD25ED /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				CEE4884024C4CF0E009C60D7 /* AppDelegate.swift */,
+				CEE4884224C4CF0E009C60D7 /* SceneDelegate.swift */,
+			);
+			path = delegates;
+			sourceTree = "<group>";
+		};
+		CEA21F5724E84DC300FD25ED /* di */ = {
+			isa = PBXGroup;
+			children = (
+				CEA21F5124E7EE2600FD25ED /* AppDI.swift */,
+			);
+			path = di;
+			sourceTree = "<group>";
+		};
+		CEA21F6224EB132300FD25ED /* navigators */ = {
+			isa = PBXGroup;
+			children = (
+				CEA21F5C24EB01F200FD25ED /* Navigator.swift */,
+			);
+			path = navigators;
+			sourceTree = "<group>";
+		};
 		CEE4883424C4CF0E009C60D7 = {
 			isa = PBXGroup;
 			children = (
@@ -132,13 +186,12 @@
 		CEE4883F24C4CF0E009C60D7 /* ios-app */ = {
 			isa = PBXGroup;
 			children = (
+				CEA21F6224EB132300FD25ED /* navigators */,
+				CEA21F5624E84DAF00FD25ED /* delegates */,
+				CEA21F5724E84DC300FD25ED /* di */,
+				CEA21F5524E84D5C00FD25ED /* viewController */,
 				CEE4887024C4CF4F009C60D7 /* MultiPlatformLibrary.framework */,
-				CEE4884024C4CF0E009C60D7 /* AppDelegate.swift */,
-				CEE4884224C4CF0E009C60D7 /* SceneDelegate.swift */,
-				CE37F00424CA170400AEFA3D /* ViewController.swift */,
-				CE37F00524CA170400AEFA3D /* ViewController.xib */,
 				CEE4884924C4CF0F009C60D7 /* Assets.xcassets */,
-				CEE4884B24C4CF0F009C60D7 /* LaunchScreen.storyboard */,
 				CEE4884E24C4CF0F009C60D7 /* Info.plist */,
 			);
 			path = "ios-app";
@@ -278,6 +331,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA21F6124EB028D00FD25ED /* MonumentDetailViewController.xib in Resources */,
+				CEA21F5B24E9D13600FD25ED /* MonumentTableViewCell.xib in Resources */,
 				CEE4884D24C4CF0F009C60D7 /* LaunchScreen.storyboard in Resources */,
 				CE37F00724CA170400AEFA3D /* ViewController.xib in Resources */,
 				CEE4884A24C4CF0F009C60D7 /* Assets.xcassets in Resources */,
@@ -345,6 +400,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA21F5D24EB01F200FD25ED /* Navigator.swift in Sources */,
+				CEA21F5A24E9D13600FD25ED /* MonumentTableViewCell.swift in Sources */,
+				CEA21F6024EB028D00FD25ED /* MonumentDetailViewController.swift in Sources */,
+				CEA21F5424E7F5D800FD25ED /* BaseViewController.swift in Sources */,
+				CEA21F5224E7EE2700FD25ED /* AppDI.swift in Sources */,
 				CE37F00624CA170400AEFA3D /* ViewController.swift in Sources */,
 				CEE4884124C4CF0E009C60D7 /* AppDelegate.swift in Sources */,
 				CEE4884324C4CF0E009C60D7 /* SceneDelegate.swift in Sources */,
@@ -522,7 +582,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.architecture.ios-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -541,7 +601,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.architecture.ios-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

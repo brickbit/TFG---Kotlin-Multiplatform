@@ -3,6 +3,7 @@ package com.architecture.mpp.view.activity
 import BaseActivity
 import android.view.View
 import domain.model.MonumentDetailDomain
+import domain.presenter.DetailView
 import domain.presenter.MonumentDetailPresenter
 import kotlinx.android.synthetic.main.activity_monument_detail.*
 import org.kodein.di.Kodein
@@ -10,7 +11,7 @@ import org.kodein.di.generic.bind
 import org.kodein.di.generic.instance
 import org.kodein.di.generic.provider
 
-class MonumentDetailActivity : BaseActivity<MonumentDetailPresenter.View>(), MonumentDetailPresenter.View {
+class MonumentDetailActivity : BaseActivity<DetailView>(), DetailView {
 
     override val progress: View  by lazy { progressViewDetail }
 

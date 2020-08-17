@@ -35,6 +35,10 @@ kotlin {
         iosArm64("iosArm64").binaries{ framework("MultiPlatformLibrary") }
         iosX64("iosX64").binaries{ framework("MultiPlatformLibrary") }
     }
+    targets.getByName<org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget>("iosX64").compilations["main"].kotlinOptions.freeCompilerArgs +=
+        listOf("-Xobjc-generics", "-Xg0")
+    targets.getByName<org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget>("iosArm64").compilations["main"].kotlinOptions.freeCompilerArgs +=
+        listOf("-Xobjc-generics", "-Xg0")
 
     sourceSets["commonMain"].dependencies {
         implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.3.72")

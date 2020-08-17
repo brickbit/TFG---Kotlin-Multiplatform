@@ -10,8 +10,9 @@ import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.kodein
 import org.kodein.di.android.subKodein
+import View as PresenterView
 
-abstract class BaseActivity<out V : BasePresenter.View>: AppCompatActivity(), KodeinAware, BasePresenter.View  {
+abstract class BaseActivity<out V : PresenterView>: AppCompatActivity(), KodeinAware, PresenterView  {
     abstract val progress: View
 
     abstract val presenter: BasePresenter<V>
@@ -19,7 +20,6 @@ abstract class BaseActivity<out V : BasePresenter.View>: AppCompatActivity(), Ko
     abstract val layoutResourceId: Int
 
     abstract val activityModule: Kodein.Module
-
     override val kodein by subKodein(kodein()) {
         import(activityModule)
     }
