@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		ACA7A6956C412DB9CA0158A3 /* Pods_ios_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772BB01469711C7F188317AD /* Pods_ios_app.framework */; };
-		CE37F00624CA170400AEFA3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37F00424CA170400AEFA3D /* ViewController.swift */; };
-		CE37F00724CA170400AEFA3D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE37F00524CA170400AEFA3D /* ViewController.xib */; };
+		CE37F00624CA170400AEFA3D /* MonumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37F00424CA170400AEFA3D /* MonumentViewController.swift */; };
+		CE37F00724CA170400AEFA3D /* MonumentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE37F00524CA170400AEFA3D /* MonumentViewController.xib */; };
 		CEA21F5224E7EE2700FD25ED /* AppDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA21F5124E7EE2600FD25ED /* AppDI.swift */; };
 		CEA21F5424E7F5D800FD25ED /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA21F5324E7F5D800FD25ED /* BaseViewController.swift */; };
 		CEA21F5A24E9D13600FD25ED /* MonumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA21F5824E9D13600FD25ED /* MonumentTableViewCell.swift */; };
@@ -62,8 +62,8 @@
 		2DA03DAB594572FC52581126 /* Pods-ios-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-app.release.xcconfig"; path = "Target Support Files/Pods-ios-app/Pods-ios-app.release.xcconfig"; sourceTree = "<group>"; };
 		7687320357BEF7B644BE6602 /* Pods-ios-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-app.debug.xcconfig"; path = "Target Support Files/Pods-ios-app/Pods-ios-app.debug.xcconfig"; sourceTree = "<group>"; };
 		772BB01469711C7F188317AD /* Pods_ios_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE37F00424CA170400AEFA3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE37F00524CA170400AEFA3D /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		CE37F00424CA170400AEFA3D /* MonumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentViewController.swift; sourceTree = "<group>"; };
+		CE37F00524CA170400AEFA3D /* MonumentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonumentViewController.xib; sourceTree = "<group>"; };
 		CEA21F5124E7EE2600FD25ED /* AppDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDI.swift; sourceTree = "<group>"; };
 		CEA21F5324E7F5D800FD25ED /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CEA21F5824E9D13600FD25ED /* MonumentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentTableViewCell.swift; sourceTree = "<group>"; };
@@ -125,8 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				CEA21F5324E7F5D800FD25ED /* BaseViewController.swift */,
-				CE37F00424CA170400AEFA3D /* ViewController.swift */,
-				CE37F00524CA170400AEFA3D /* ViewController.xib */,
+				CE37F00424CA170400AEFA3D /* MonumentViewController.swift */,
+				CE37F00524CA170400AEFA3D /* MonumentViewController.xib */,
 				CEA21F5824E9D13600FD25ED /* MonumentTableViewCell.swift */,
 				CEA21F5E24EB028D00FD25ED /* MonumentDetailViewController.swift */,
 				CEA21F5F24EB028D00FD25ED /* MonumentDetailViewController.xib */,
@@ -334,7 +334,7 @@
 				CEA21F6124EB028D00FD25ED /* MonumentDetailViewController.xib in Resources */,
 				CEA21F5B24E9D13600FD25ED /* MonumentTableViewCell.xib in Resources */,
 				CEE4884D24C4CF0F009C60D7 /* LaunchScreen.storyboard in Resources */,
-				CE37F00724CA170400AEFA3D /* ViewController.xib in Resources */,
+				CE37F00724CA170400AEFA3D /* MonumentViewController.xib in Resources */,
 				CEE4884A24C4CF0F009C60D7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,7 +405,7 @@
 				CEA21F6024EB028D00FD25ED /* MonumentDetailViewController.swift in Sources */,
 				CEA21F5424E7F5D800FD25ED /* BaseViewController.swift in Sources */,
 				CEA21F5224E7EE2700FD25ED /* AppDI.swift in Sources */,
-				CE37F00624CA170400AEFA3D /* ViewController.swift in Sources */,
+				CE37F00624CA170400AEFA3D /* MonumentViewController.swift in Sources */,
 				CEE4884124C4CF0E009C60D7 /* AppDelegate.swift in Sources */,
 				CEE4884324C4CF0E009C60D7 /* SceneDelegate.swift in Sources */,
 			);

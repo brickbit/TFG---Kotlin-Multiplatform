@@ -9,7 +9,7 @@
 import UIKit
 import MultiPlatformLibrary
 
-class ViewController: BaseViewController<MonumentView>, MonumentView, UITableViewDelegate, UITableViewDataSource {
+class MonumentViewController: BaseViewController<MonumentView>, MonumentView, UITableViewDelegate, UITableViewDataSource {
     private var listItems: [MonumentMainItemDomain] = []
     @IBOutlet weak var monumentList: UITableView!
     private let monumentIdentifier = String(describing: MonumentTableViewCell.self)
